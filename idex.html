@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kiran Jambagi · Portfolio</title>
+  <meta name="description" content="Developer portfolio for Kiran Jambagi" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 24px;
+      color: #00fff5;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s ease;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #00fff5;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+    }
+    .hero h2 {
+      font-size: 48px;
+      color: #00fff5;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #dcdcdc;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: #00fff5;
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: linear-gradient(145deg, #1f4068, #16213e);
+      border-radius: 15px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 255, 245, 0.3);
+    }
+    .card h3 {
+      color: #00fff5;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #dcdcdc;
+      font-size: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.9);
+      color: #999;
+      font-size: 14px;
+    }
+    .btn {
+      display: inline-block;
+      background: #00fff5;
+      color: #16213e;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .btn:hover {
+      background: #02c8c3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kiran Jambagi</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm Kiran 👋</h2>
+    <p>Backend Developer | Java | Spring Boot | JavaScript</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate developer focused on creating clean, efficient, and functional web applications using modern technologies. I’m currently enhancing my skills in java.</p>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="card-container">
+      <div class="card"><h3>Languages</h3><p>Java, PHP, JavaScript, HTML, CSS</p></div>
+      <div class="card"><h3>Frameworks</h3><p>Spring Boot, Hibernate, Magento</p></div>
+      <div class="card"><h3>Databases</h3><p>MySQL</p></div>
+      <div class="card"><h3>Tools</h3><p>Eclipse, VS Code, Git, Postman</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="card-container">
+      <div class="card"><h3>To-Do App</h3><p>Task management app with CRUD features using HTML, CSS, JS.</p></div>
+      <div class="card"><h3>Weather App</h3><p>Displays weather data using APIs with a clean UI.</p></div>
+      <div class="card"><h3>Employee Management</h3><p>Employee details using java Springboot and MySQL.</p></div>
+      <div class="card"><h3>Magento Ecommerce site</h3><p>An ecommerce page with some products</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Let's connect! Reach me at <a href="mailto:youremail@example.com" style="color:#00fff5;">kiranjambagi390@gmail.com</a></p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Kiran Jambagi 
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html> 
